@@ -1,0 +1,723 @@
+Received: from DB4PR02MB8656.eurprd02.prod.outlook.com (2603:10a6:10:380::19)
+ by DB4PR02MB9429.eurprd02.prod.outlook.com with HTTPS; Tue, 4 Nov 2025
+ 15:14:53 +0000
+Received: from AS9PR06CA0726.eurprd06.prod.outlook.com (2603:10a6:20b:487::8)
+ by DB4PR02MB8656.eurprd02.prod.outlook.com (2603:10a6:10:380::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9275.16; Tue, 4 Nov
+ 2025 15:14:51 +0000
+Received: from AM3PEPF00009B9C.eurprd04.prod.outlook.com
+ (2603:10a6:20b:487:cafe::1a) by AS9PR06CA0726.outlook.office365.com
+ (2603:10a6:20b:487::8) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9275.16 via Frontend Transport; Tue,
+ 4 Nov 2025 15:14:46 +0000
+Authentication-Results: spf=pass (sender IP is 159.183.221.242)
+ smtp.mailfrom=em4753.credly.com; dkim=pass (signature was verified)
+ header.d=credly.com;dmarc=pass action=none
+ header.from=credly.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em4753.credly.com
+ designates 159.183.221.242 as permitted sender)
+ receiver=protection.outlook.com; client-ip=159.183.221.242;
+ helo=o1.ptr3930.credly.com; pr=C
+Received: from o1.ptr3930.credly.com (159.183.221.242) by
+ AM3PEPF00009B9C.mail.protection.outlook.com (10.167.16.21) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9298.6
+ via Frontend Transport; Tue, 4 Nov 2025 15:14:50 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=credly.com;
+	h=date:from:subject:mime-version:to:content-type:
+	content-transfer-encoding:cc:content-type:date:from:subject:to;
+	s=d; bh=tPQMQXAlBqawsU+G1hmVGk/hdMAxPxFMkCoUDQBids8=;
+	b=eeQWw9wNLZ4+8K+eFXjYcurqCkOupdOgZsSZjlL8JmVCyQDTdD15wzZhBSW57Klj01iU
+	+octkQ2ofgQtsbEjuA4QYcFC+/6dP1HzuO/dWonvH34lILJSRxyrhHWu4HClfZ/mNxcB6z
+	HXfkXxnrCVTC6s50UmQOUiZWRJCk2o44210fyFcRSKnwn1Rr/eRc2goCDB7CTRtiUOUhfR
+	zuMKKX9XetfLMrsYj0mjOSyXTm5cGvQPKqGy9Rx7iE5UGba68tZ7E447NHw2Jk5fxDZlN1
+	x0zP2ynwt+YsSMdGU7vw3SzDIsxF5X/26dZTurpmm9ILbLr31y5O5PQlGoiJitbg==
+Received: by recvd-64b95b6d8c-rjpm7 with SMTP id recvd-64b95b6d8c-rjpm7-1-690A1868-A3
+	2025-11-04 15:14:48.237701021 +0000 UTC m=+13213801.185533351
+Received: from heroku.com (unknown)
+	by geopod-ismtpd-45 (SG) with ESMTP
+	id IWjuqF3eTcSmgJGzl_NkbA
+	for <emeric.barbot@edu.devinci.fr>;
+	Tue, 04 Nov 2025 15:14:48.125 +0000 (UTC)
+Date: Tue, 04 Nov 2025 15:14:48 +0000 (UTC)
+From: IBM via Credly <admin@credly.com>
+Message-ID: <690a1867ed94f_1d26ac10921e@acclaim-worker-6c76fc4f9f-vjslk.mail>
+Subject: IBM issued you a new badge
+X-SG-EID: =?us-ascii?Q?u001=2EFm1+EXZFzYTSn5K+SucbunQX24q=2FkrmzGKVR3SpqjFDPSEacDS2LEGEpB?=
+ =?us-ascii?Q?erxvUl43WTflUdDG3bgoCgQwj5gqcxUkHvrMmhe?=
+ =?us-ascii?Q?B5x2=2FZCcqMpj4nN=2F5nPjULvr41cVfAykF3o61K=2F?=
+ =?us-ascii?Q?8dp3RWVoswMcs6rI7nNmFka7efxPfdgZL0kjfWp?=
+ =?us-ascii?Q?=2F22ehwZDhr3e+ML6gew7MRdktFxNO4SLi2aE1XN?=
+ =?us-ascii?Q?aocOamLkDZgHomsHHoCqhS=2FkoyLYE75dJ1afJpu?= =?us-ascii?Q?7Sz1?=
+X-SG-ID: =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprAC7zs8aIgqX2fEe?=
+ =?us-ascii?Q?1ATvmlu9+bzsmD4X1jlfVCfiM1LcHnDvTPBd89k?=
+ =?us-ascii?Q?pw8DrBvFpI=2FS505z1bphH9=2F0=2FN4RztikowYZD=2Fm?=
+ =?us-ascii?Q?QKj6qIXCFyRV0K36zcB8l5+B6PCucjNbzRc1BQz?=
+ =?us-ascii?Q?IiFdP6kFap49neC14pWM3dbCTjYr9YzuL5VbFj1?=
+ =?us-ascii?Q?=2FEQixPSWi5IUYqgU98e1nm=2F0+ifaeBXhZaszNcG?=
+ =?us-ascii?Q?DlCKA1HW3Og4UBx=2Fmoa07vBPUSfmo8aOUImN3LB?=
+ =?us-ascii?Q?K9L7fp9yx=2FpZByT0fo12+qhlBM5FZrVSHk721sm?=
+ =?us-ascii?Q?Ue8BC0KRwXfQOenEqa6WhiyXKxVsP2UwqW9MDdy?=
+ =?us-ascii?Q?TKwWfL6SvCrvMjloCcABdl22pnPzLfoBquZxEMY?=
+ =?us-ascii?Q?REVQQIVBFnKRo66FklHY8Lxihw9AFdtn++GEZII?=
+ =?us-ascii?Q?jgUOQm6QpbqWR87VCDXWJiA=3D=3D?=
+To: emeric.barbot@edu.devinci.fr
+X-Entity-ID: u001.j4ZvBpCV34X/bmdr7V48uA==
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_690a1867df79d_1d26ac109186";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Return-Path: bounces+26682722-a674-emeric.barbot=edu.devinci.fr@em4753.credly.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Nov 2025 15:14:51.4130
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: eb78f8dc-16d6-442e-6ed8-08de1bb4e6d7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 88eebcae-d6e6-4ef7-bba4-4c34f4c2d5e0:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AM3PEPF00009B9C:EE_|DB4PR02MB8656:EE_|DB4PR02MB9429:EE_
+X-MS-Exchange-Organization-AuthSource: AM3PEPF00009B9C.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: eb78f8dc-16d6-442e-6ed8-08de1bb4e6d7
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;ARA:13230040|12012899012|4022899009|5073199012|13012899012|29132699027|13102899012|69100299015|5062899012|3092899012|3072899012|2092899012|13003099007|8096899003;
+X-Forefront-Antispam-Report: CIP:159.183.221.242;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o1.ptr3930.credly.com;PTR:o1.ptr3930.credly.com;CAT:NONE;SFTY:9.25;SFS:(13230040)(12012899012)(4022899009)(5073199012)(13012899012)(29132699027)(13102899012)(69100299015)(5062899012)(3092899012)(3072899012)(2092899012)(13003099007)(8096899003);DIR:INB;SFTY:9.25;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Nov 2025 15:14:50.7482
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: eb78f8dc-16d6-442e-6ed8-08de1bb4e6d7
+X-MS-Exchange-CrossTenant-Id: 88eebcae-d6e6-4ef7-bba4-4c34f4c2d5e0
+X-MS-Exchange-CrossTenant-AuthSource: AM3PEPF00009B9C.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB4PR02MB8656
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2332676
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9275.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4713098)(4714117)(4999163)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MkhFQTlRNFZONVVYT0pjZFhmVStveGxJVXpkNWxJb1NYWmRSbkw5WlFtbEpi?=
+ =?utf-8?B?Q3JYb0pnTm8zaWhveEMyVHNvcVRBZ3F6VFhLUFB1eEJSM3BOb2ttYlZ2bktP?=
+ =?utf-8?B?MUV0Qk5EYzZud09RVVlKVllVVmlRQTZlV3FyMHJZc3JjTE9ieGNqN21lcUpm?=
+ =?utf-8?B?V0lyRDVCMEwxVHhvMUV4Vk9ONFhYMFVpdmEvMFFFVzkxUEdnWFRsdyt2dkkr?=
+ =?utf-8?B?bU9EU25wUTdzdG5TMXV5aVh0YWI4SmRXd0pHYTdMa2d1a0pLNmVNTkdlK04z?=
+ =?utf-8?B?MEVOYldwNDgyN3UwaTJyRDRMaWRDeWp6R3dGZmMzSEdTb3Qzb3NVL2JTOGFP?=
+ =?utf-8?B?R3A0M2c5eVBSb1YyUkMzeUJqWTNadFJtQkd2QjhSQ0d2SWtvUlVhTXFxV3lX?=
+ =?utf-8?B?Y0ZmQWM0eXdtSVpzc2R0ZnA0NkxvVjRzdXljVk94aE1rV0dTM245cU1LL2ZY?=
+ =?utf-8?B?cjZub1lTSW50OHJ0YmlpRExNa0M2VytWZVpRT1JhVTZFbWRraXZPcmU2cDdE?=
+ =?utf-8?B?b1RYSDJ2b2xBSFp5VzVZSHBYT2lwcnR1MlNhUy9yNkZsd0RlKzY5Zm1UbjdL?=
+ =?utf-8?B?QkNGbXU5MW5QblM3VW9kMnIvSUplNWxVdW52cEtVc2dzWWZkbTVKVnNXOEsv?=
+ =?utf-8?B?dTVtSm5tN3BWd1k3QWorVTJHSkxyU25ncEFiUUJoeHhsMGJnenNpM2JxUGJT?=
+ =?utf-8?B?Z3ZvUEN0MjYvT3grY0FQZllvVUFJeE5HSENtQzlPbXVHQkpIYlRsQlJKd3lL?=
+ =?utf-8?B?VHMyM0tzN0FnQXVFK2Erd3Z5ZjlSRVdKM1FHQUVaNmorY3dVVGRQTDRtRUFo?=
+ =?utf-8?B?YkpCZ2dtQy9Jek9oeXkzRkxHcW04Y3VHN29RMlY1KzEzejkrZWlxNlNzaFRN?=
+ =?utf-8?B?NnNtY2dRVVhoMjg1U0xHQ3VidHRzWkZwa2dOdC8vVnNyL1VPRzBPM3F2bG9I?=
+ =?utf-8?B?V0F6MDVoc3RhcktQd3VEUmxpU0JvWUVjUVB3REkxUjRCbkVDc1Bja2kwUTdi?=
+ =?utf-8?B?andDSEYwNHFwZEEydDJHeEExVjgzQTQ5NXA2NUxZVG85cUhKSGQwdWgvajNs?=
+ =?utf-8?B?aEc3N3N0WFJ2S0ErRHBZbnNsd1RiYmZIVkIrVEhXUTQxemdnYzlaZW9yUkhu?=
+ =?utf-8?B?QzNUaXU3VlYwRkV0NkFZZXlrdGFNcXhYWEYxYUs2Q3JiUEhJcTdBeHMzeUFN?=
+ =?utf-8?B?MWdzTnBVbzBjZ3NrL0VqUHdZSWZIem5xT3VCRGhDVFJyNGxpL09aOU01RU95?=
+ =?utf-8?B?Tzh4cjU4bjk5a3JUTE5oR1dCcFZIYzEwbG1aaG5rTlFRdnhEcjl1V1hYb3N5?=
+ =?utf-8?B?MjNuY2VMVlhBSmZxZWdJRFFXczZqRjFQbkE3RkZoTnljYWVTbXE3em1DamIz?=
+ =?utf-8?B?dWdEamQ3MGhadWxsdDY1RHpEbVFTcVBRWHl0VUdiYklBUU5OZnozVjJlRjlX?=
+ =?utf-8?B?dXRMaUtjeUxEL0pJT3BHd0x2NkV5VUtVS2RmN0twR0tqUnNxVE40OW0xWXdu?=
+ =?utf-8?B?bVdFYlovZkphMzlTNVFOK3pMdHoxa0phR2czaEl4cUF3aHdZWXIybyt3andN?=
+ =?utf-8?B?cktqNitsSDZYSUloS3R5ZE8wbENNTGE2MHNzVExOTEhiRHYweVZlcmNhaHFr?=
+ =?utf-8?B?S2FJTTdqVmloZHY5ekxHb3BydVZad0N5d3N2YnR5eklxTlAzVHZVbjA4MzhG?=
+ =?utf-8?B?VkJUK0paa0VyN3ZNamVUbHlHSEROd3ZleWt5OG1GTzNOamRRM2tIeng5aGlF?=
+ =?utf-8?B?QWhKbmNzRitWaWRSR3NUYUY5bjcxWk9hMS8xQVRoVmRQK3hWLzAySTU4YTdw?=
+ =?utf-8?B?VFh0T2I0T1JVNnZ4cDZCWGhvNTYvSnVod3huU3FsNlRVYU92NmI4RzdtSzdJ?=
+ =?utf-8?B?TXpzYm5Pb091NU10VjFUZWZWSDBsVTZOMWJQUStZcnU3SWZSL2o3eXJWZktD?=
+ =?utf-8?B?NS9DeDlqZ1BQRDBpY2VUVnRQV0dhdlU0TlU4K3VOTlRrSlg0NXI0bzVIRkov?=
+ =?utf-8?B?WUsxZm1KTHVBa3BHcVBLMHpLdWVhZ2xzWEQ3VFlYdkFJUEZTZDJlZ1RTSllJ?=
+ =?utf-8?B?bERPTU11RGJ3MXdsdXE5SHFsbkZMU09tS3JnSEdxWnVoUGJyWHdvbldJZzYx?=
+ =?utf-8?B?UVQ0bXlybEV6a3N6SEdJelpUbnpxZEJCRnpUWHpERnJZV243VFFHOGdxNzBO?=
+ =?utf-8?B?STJuY2Z5eFd1NVdMOEZqT1EyVGxNT1J3Qk5nVUt5MEtsM0Zqc1Ayb0lpcEla?=
+ =?utf-8?B?WVdUU2dKL1QwNEFzdDRZZVEzWEl6OHBMTUNDOCtoV2Y5OUE0T1Q2dTlROE1r?=
+ =?utf-8?B?TERnWU5weSs0QWNoRkszZk96VTRuNjVlNXZ4RGdlRmQ2L2VCM1BlSEZ1UVRU?=
+ =?utf-8?B?aG5jdHpoc3hxSitPKzlyc2U3Y2VaYWkwNXFoSUFMMXlIdy9hdWZiMjViVDF2?=
+ =?utf-8?B?a3pDcWNBYzdiWVZBZnBnNWlQY3VQcGRIUnE0NnlnTW1aREZsNEl4ZDN1K1FH?=
+ =?utf-8?B?Ykd2WURWODRvazZmdkhpLzhySWxjT0lPaHN4MmYrZUxjOEVZTHM0Y1p3aVIr?=
+ =?utf-8?B?OUNCakcvMDFITHJvSzNVVE5UbjRrVE11K0o1dG5rODdmLzBrNXVpUEY4ZG1P?=
+ =?utf-8?B?ZnhzQVAwT0pkMUQ4OWtoZDFuVmJ4S0x3SHZCN0IzdUowTUQ2RFFqcHNtalh6?=
+ =?utf-8?B?b1JRc0NmaUJHR3hJT1RMbEdLTkIxMllIKytHM0RRbDM0bDFxcDljTGJ3aVRV?=
+ =?utf-8?B?dnJ5QTZtbDg3T2RIY2ZiaG1FVTIzNUN2S1VwTXpsazF2SlFqMzV6N2xkREpU?=
+ =?utf-8?B?a1U0L0NlNGgzaDNRZ1ZpMTloUXNLOGtBRWN5SnluN0xoSUNpQW9obmVDdWFT?=
+ =?utf-8?B?ckF3enFQMTdLdndMU1NJQmNNWWdCQjNSSC9mMVE0SXpiZXQ1MVEyWE4vZml3?=
+ =?utf-8?B?dnJKZXkxZzlSVWZ4UDJuQ2xDRmt6KytQUnk2dW1USzI3ZUVDZkdiYU1VeTR2?=
+ =?utf-8?B?dlQwWUZjeHZVYWg0c2R0NGkxU1QybkZOdFVORXViajBzRGpaS0kxRUxtbUk0?=
+ =?utf-8?B?T2ZveHhrQ1ZaT3F2M2t0VnRvV1FNZ0RNRmdqUVQrMWVaNGh3Q0h4ZVpGSXZL?=
+ =?utf-8?Q?g598kl85A?=
+MIME-Version: 1.0
+
+----==_mimepart_690a1867df79d_1d26ac109186
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+You don't often get email from admin@credly.com. Learn why this is importan=
+t<https://aka.ms/LearnAboutSenderIdentification>
+[IBM]
+Congratulations! You've earned a digital credential from IBM
+You've completed the criteria associated with earning a digital credential =
+from the IBM Digital Badge program. Click below to accept your badge.
+[https://images.credly.com/images/2a36b3c9-830b-4260-86b7-4a80d25cfb86/blob=
+]
+IBM watsonx.data Technical Essentials
+Issuer: IBM
+Accept your badge<https://www.credly.com/go/V3F369Bmmz6aydYBwX85Mw>
+
+or accept your badge by clicking:
+https://www.credly.com/go/V3F369Bmmz6aydYBwX85Mw
+
+[IBM]
+Why is an IBM digital credential valuable to you?
+
+  *   Makes it easy to broadcast your achievement
+  *   Helps develop your own professional brand
+  *   Shows the world your skills are current and verifiable
+
+Learn more about the IBM Credentials Program<https://www.ibm.com/training/c=
+redentials>
+
+________________________________
+[https://cdn.credly.com/assets/email/sharing-graphic-f47799d1a9272185ffa4df=
+7efd73d5e1b2af8cdc6a68718123660021b923fbbd.png]
+You've worked hard to earn this achievement. Share the good news with your =
+professional network, friends and family by accepting your badge.
+
+New to badging? Learn more now.<https://www.credly.com/about>
+
+________________________________
+[Credly]
+Credly<https://www.credly.com> is a badging platform that works with credib=
+le organizations to recognize, manage and share professional achievements. =
+Credly is the world=E2=80=99s leading digital credential service provider.
+
+IBM Privacy Statement
+
+NOTICE: IBM leverages the services of Credly, a 3rd party data processor au=
+thorized by IBM and located in the United States, to assist in the administ=
+ration of the IBM Digital Badge program. In order to issue you an IBM Digit=
+al Badge, your personal information (name, email address, and badge earned)=
+ will be shared with Credly. You will receive an email notification from Cr=
+edly with instructions for claiming the badge. Your personal information is=
+ used to issue your badge and for program reporting and operational purpose=
+s. It will be handled in a manner consistent with IBM privacy practices. IB=
+M may share the personal information collected with IBM subsidiaries and th=
+ird parties globally. The IBM Privacy Statement can be viewed here: IBM Pri=
+vacy Statement<https://www.ibm.com/us-en/privacy>. IBM employees can view t=
+he IBM Internal Privacy Statement here: https://w3.ibm.com/w3publisher/w3-p=
+rivacy-notice.
+
+If you prefer not to receive emails like this from Credly, you may unsubscr=
+ibe<https://www.credly.com/email_preferences/v2:ZXZFS2htb2o4cFMxcUErTEFrOW8=
+3ZDN5Mk1JRDc3bEQ5MEpLczhZdno3Z3YrUXRSenQwPS0teExCcEhTUXQxamQrOVI5WC0tNzgzRH=
+FlSDVRN0hnTzZqTDdDMGthUT09/edit>.
+Manage<https://www.credly.com/earner/settings/account> your email notificat=
+ion preferences.
+=C2=A9 Copyright 2025. All rights reserved.
+
+
+
+----==_mimepart_690a1867df79d_1d26ac109186
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<!-- Use :recent_outlook_styles to target Outlook 2010+ --><!--[if gte mso =
+12]>
+      <style type=3D"text/css" data-premailer=3D"ignore">
+        <style>
+  .learn-more .text {
+    text-align: center !important;
+  }</style>
+
+      </style>
+    <![endif]--><!--[if (mso)]>
+      <xml:namespace ns=3D"urn:schemas-microsoft-com:vml" prefix=3D"v" />
+      <style type=3D"text/css" data-premailer=3D"ignore">
+        v\: * { behavior:url(#default#VML); display:inline-block }
+      </style>
+    <![endif]--><style>.employee-invitation-button):hover {
+color: #004438 !important; text-decoration: underline !important;
+}
+a.button:hover {
+background-color: #004438 !important; border-color: #004438 !important;
+}
+body {
+margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%;
+}
+img {
+border: 0 none; height: auto; line-height: 100%; outline: none; text-decora=
+tion: none; -ms-interpolation-mode: bicubic;
+}
+.ExternalClass {
+width: 100%; line-height: 100%;
+}
+.button:hover {
+background: #004438; border-color: #004438;
+}
+.eafit .footer1 a:hover {
+color: #230962 !important;
+}
+.eafit .exposed-button .button:hover {
+background: #230962 !important; border-color: #230962 !important;
+}
+.eafit .exposed-button a:not(.button):hover {
+color: #230962 !important;
+}
+.profile-send-message__message-container__message:before {
+content: open-quote;
+}
+.profile-send-message__message-container__message:after {
+content: close-quote;
+}
+.badge-action__action-button:hover {
+background-color: #004438 !important; border-color: #004438 !important;
+}
+.proedge .content .accept-button:hover {
+color: #fff !important;
+}
+@media (max-width: 767px) {
+  .new-layout {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .learn-more {
+    text-align: center;
+  }
+  .learn-more .image {
+    margin: 12px 0 !important;
+  }
+  .learn-more .text {
+    text-align: left !important; width: auto !important;
+  }
+  .tecnologico-de-mexico-footer {
+    text-align: center;
+  }
+  .tecnologico-de-mexico-footer .image {
+    margin: 12px 0 !important;
+  }
+  .tecnologico-de-mexico-footer .text {
+    text-align: left !important; width: auto !important;
+  }
+}
+</style>
+</head>
+<body style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+margin: 0; padding: 0;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: revert !=
+important; white-space: revert !important; width: revert !important; word-b=
+reak: revert !important; word-spacing: revert !important; writing-mode: rev=
+ert !important; zoom: revert !important; cellpadding: 0 !important; border:=
+ 0 !important; cellspacing: 0 !important; display: table !important; width:=
+ 100% !important; table-layout: fixed !important; border-collapse: seperate=
+ !important; float: none !important; border-spacing: 0px 0px !important; " =
+align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: revert !important; white-space: revert !important; width: revert !import=
+ant; word-break: revert !important; word-spacing: revert !important; writin=
+g-mode: revert !important; zoom: revert !important; display: block !importa=
+nt; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+revert !important; white-space: revert !important; width: revert !important=
+; word-break: revert !important; word-spacing: revert !important; writing-m=
+ode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: revert !important; white-space: revert !important; width: revert !=
+important; word-break: revert !important; word-spacing: revert !important; =
+writing-mode: revert !important; zoom: revert !important; padding: 7px 2px =
+7px 2px !important; background-color: #A6A6A6 !important; valign: middle !i=
+mportant; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: revert !important; white-space: revert !import=
+ant; width: revert !important; word-break: revert !important; word-spacing:=
+ revert !important; writing-mode: revert !important; zoom: revert !importan=
+t; width: 100% !important; background-color: #EAEAEA !important; padding: 7=
+px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Sego=
+e WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fon=
+t-weight: normal !important; color: #212121 !important; text-align: left !i=
+mportant; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ revert !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+You don't often get email from admin@credly.com. <a href=3D"https://aka.ms/=
+LearnAboutSenderIdentification" style=3D"background: revert !important;colo=
+r: revert !important;content-visibility: revert !important;direction: rever=
+t !important;display: revert !important;font-size: revert !important;opacit=
+y: revert !important;rotate: revert !important;scale: revert !important;vis=
+ibility: revert !important;">
+Learn why this is important</a> </div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: revert !important; white-space: =
+revert !important; width: revert !important; word-break: revert !important;=
+ word-spacing: revert !important; writing-mode: revert !important; zoom: re=
+vert !important; width: 75px !important; background-color: #EAEAEA !importa=
+nt; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, S=
+egoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !i=
+mportant; font-weight: normal !important; color: #212121 !important; text-a=
+lign: left !important; word-wrap: break-word !important; align: left !impor=
+tant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div><!--[if mso]>
+      <center><table><tr><td width=3D"640">
+    <![endif]-->
+<div class=3D"outer-container" style=3D"max-width: 640px; margin: 0 auto;">
+<div id=3D"header">
+<table class=3D"logo" style=3D"width: 100%; mso-table-lspace: 0pt; mso-tabl=
+e-rspace: 0pt; border-collapse: collapse; text-align: center;" bgcolor=3D"#=
+f1f2f2">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica,Arial,sans-serif; border-collapse: coll=
+apse; padding: 12px;" class=3D"padded-section">
+<!--[if (lt mso 14)]>
+              <v:oval xmlns:v=3D"urn:schemas-microsoft-com:vml"
+                  xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+                  style=3D"height:80px;width:80px;" fill=3D"t" stroke=3D"f"=
+>
+                <v:fill type=3D"frame" color=3D"white" src=3D"https://image=
+s.credly.com/images/854d76bf-4f74-4d51-98a0-d969214bfba7/standard_IBM%2BLog=
+o%2Bfor%2BAcclaim%2BProfile.png"
+                      style=3D"80px;width:80px;"/>
+              </v:oval>
+            <![endif]--><!--[if (gte mso 14)]>
+              <v:oval xmlns:v=3D"urn:schemas-microsoft-com:vml"
+                  xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+                  style=3D"height:80px;width:80px;" fill=3D"t" stroke=3D"f"=
+>
+                  <v:imagedata style=3D"width:80px;height:80px;" color=3D"w=
+hite"
+                    src=3D"https://images.credly.com/images/854d76bf-4f74-4=
+d51-98a0-d969214bfba7/standard_IBM%2BLogo%2Bfor%2BAcclaim%2BProfile.png" />
+                  </v:oval>
+            <![endif]--><!--[if !mso]><!--><img alt=3D"IBM" class=3D"logo-c=
+ircle " style=3D"background-color: white; height: auto; line-height: 100%; =
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; bord=
+er-radius: 50%; border-style: none; border-width: 0;" src=3D"https://images=
+.credly.com/images/854d76bf-4f74-4d51-98a0-d969214bfba7/standard_IBM%2BLogo=
+%2Bfor%2BAcclaim%2BProfile.png" width=3D"80" height=3D"80"><!--<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table class=3D"headline" style=3D"width: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; border-collapse: collapse;">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica,Arial,sans-serif; border-collapse: coll=
+apse; color: #252525; font-size: 18px; font-weight: bold; padding: 24px;" c=
+lass=3D"padded-section" align=3D"center">
+Congratulations! You've earned a digital credential from IBM</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"IBM">
+<div class=3D"desc">You've completed the criteria associated with earning a=
+ digital credential from the IBM Digital Badge program. Click below to acce=
+pt your badge.
+</div>
+</div>
+<div>
+<div class=3D"badge" style=3D"" align=3D"center"><img alt=3D"" src=3D"https=
+://images.credly.com/images/2a36b3c9-830b-4260-86b7-4a80d25cfb86/blob" widt=
+h=3D"110" height=3D"110" style=3D"height: auto; line-height: 100%; outline:=
+ none; text-decoration: none; -ms-interpolation-mode: bicubic; border-style=
+: none; border-width: 0;">
+<table style=3D"width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+border-collapse: collapse;">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica,Arial,sans-serif; border-collapse: coll=
+apse; padding: 24px;" class=3D"padded-section" align=3D"center">
+<div class=3D"nameAndIssuer" style=3D"font-size: 15px;"><span class=3D"name=
+" style=3D"color: #333;">IBM watsonx.data Technical Essentials
+</span><br>
+<span class=3D"issuer" style=3D"color: #666; padding-top: 4px;">Issuer: IBM=
+ </span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"exposed-button" style=3D"margin-top: 0;" align=3D"center"><a =
+class=3D"button" href=3D"https://www.credly.com/go/V3F369Bmmz6aydYBwX85Mw" =
+style=3D"background-color: #005850; text-decoration: none; border-radius: 4=
+px; color: #fff; display: inline-block; font-size: 13px; text-align: center=
+; margin: 0 8px; padding: 0 5px; border: 15px solid #005850;">Accept
+ your badge</a>
+<p style=3D"font-family: Helvetica,Arial,sans-serif; font-size: 12px; line-=
+height: 14px;" align=3D"center">
+or accept your badge by clicking: <br>
+<a href=3D"https://www.credly.com/go/V3F369Bmmz6aydYBwX85Mw" style=3D"color=
+: #005850; text-decoration: none; word-break: break-all;">https://www.credl=
+y.com/go/V3F369Bmmz6aydYBwX85Mw</a>
+</p>
+</div>
+<table class=3D"learn-more" style=3D"width: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;" bgcolor=3D"#f1f2f2">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica,Arial,sans-serif; border-collapse: coll=
+apse; padding: 24px;" class=3D"padded-section">
+<div class=3D"IBM-why-valuable">
+<div class=3D"image" style=3D"display: inline-block; vertical-align: middle=
+; width: 100px; margin: 0 16px;" align=3D"center">
+<img alt=3D"IBM" src=3D"https://cdn.credly.com/assets/email/ibm_logo-4270c8=
+3883a5fdc0787fa07d42a3e76eab2b716a80a8e63055499187e02ff319.png" width=3D"10=
+0" height=3D"40" style=3D"height: auto; line-height: 100%; outline: none; t=
+ext-decoration: none; -ms-interpolation-mode: bicubic; border-style: none; =
+border-width: 0;">
+</div>
+<div class=3D"text" style=3D"display: inline-block; vertical-align: middle;=
+ width: 55%; color: #4e4e4e; font-size: 12px; line-height: 14px; margin: 12=
+px 0;" align=3D"center">
+<h3 style=3D"font-family: Helvetica,Arial,sans-serif; font-size: 14px; marg=
+in: 8px 0;">
+Why is an IBM digital credential valuable to you? </h3>
+<ul>
+<li>Makes it easy to broadcast your achievement</li><li>Helps develop your =
+own professional brand</li><li>Shows the world your skills are current and =
+verifiable</li></ul>
+<p class=3D"learn" style=3D"font-family: Helvetica,Arial,sans-serif; color:=
+ #4e4e4e; font-size: 12px; margin: 12px 0;">
+Learn more about the <a href=3D"https://www.ibm.com/training/credentials">I=
+BM Credentials Program</a>
+</p>
+</div>
+</div>
+<hr style=3D"border-top-width: 1px; border-top-color: #c5c5c5; margin: 8px =
+0 48px; border-style: solid none none;">
+<div class=3D"image" style=3D"display: inline-block; vertical-align: middle=
+; width: 100px; margin: 0 16px;" align=3D"center">
+<img alt=3D"" src=3D"https://cdn.credly.com/assets/email/sharing-graphic-f4=
+7799d1a9272185ffa4df7efd73d5e1b2af8cdc6a68718123660021b923fbbd.png" width=
+=3D"96" height=3D"100" style=3D"height: auto; line-height: 100%; outline: n=
+one; text-decoration: none; -ms-interpolation-mode: bicubic; border-style: =
+none; border-width: 0;"></div>
+<div class=3D"text" style=3D"display: inline-block; vertical-align: middle;=
+ width: 55%; color: #4e4e4e; font-size: 12px; line-height: 14px; margin: 12=
+px 0;" align=3D"center">
+You've worked hard to earn this achievement. Share the good news with your =
+professional network, friends and family by accepting your badge.
+<p style=3D"font-family: Helvetica,Arial,sans-serif; color: #4e4e4e; font-s=
+ize: 12px; margin: 12px 0;">
+<a href=3D"https://www.credly.com/about">New to badging? Learn more now.</a=
+></p>
+</div>
+<hr style=3D"border-top-width: 1px; border-top-color: #c5c5c5; margin: 8px =
+0 48px; border-style: solid none none;">
+<div class=3D"image" style=3D"display: inline-block; vertical-align: middle=
+; width: 100px; margin: 0 16px;" align=3D"center">
+<img alt=3D"Credly" src=3D"https://cdn.credly.com/assets/email/logo_transpa=
+rent-0df44b0c6320733f6a0559911a254fd5f2b70166f8ffdae4efe29813d6bcdec9.png" =
+width=3D"69" height=3D"17" style=3D"height: auto; line-height: 100%; outlin=
+e: none; text-decoration: none; -ms-interpolation-mode: bicubic; border-sty=
+le: none; border-width: 0;"></div>
+<div class=3D"text" style=3D"display: inline-block; vertical-align: middle;=
+ width: 55%; color: #4e4e4e; font-size: 12px; line-height: 14px; margin: 12=
+px 0;" align=3D"center">
+<a href=3D"https://www.credly.com">Credly</a> is a badging platform that wo=
+rks with credible organizations to recognize, manage and share professional=
+ achievements. Credly is the world=E2=80=99s leading digital credential ser=
+vice provider.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"IBM">
+<div class=3D"IBM_privacy_statement">
+<p class=3D"privacy_header" style=3D"font-family: Helvetica,Arial,sans-seri=
+f;">IBM Privacy Statement
+</p>
+<p style=3D"font-family: Helvetica,Arial,sans-serif;">NOTICE: IBM leverages=
+ the services of Credly, a 3rd party data processor authorized by IBM and l=
+ocated in the United States, to assist in the administration of the IBM Dig=
+ital Badge program. In order to issue
+ you an IBM Digital Badge, your personal information (name, email address, =
+and badge earned) will be shared with Credly. You will receive an email not=
+ification from Credly with instructions for claiming the badge. Your person=
+al information is used to issue
+ your badge and for program reporting and operational purposes. It will be =
+handled in a manner consistent with IBM privacy practices. IBM may share th=
+e personal information collected with IBM subsidiaries and third parties gl=
+obally. The IBM Privacy Statement
+ can be viewed here: <a href=3D"https://www.ibm.com/us-en/privacy">IBM Priv=
+acy Statement</a>. IBM employees can view the IBM Internal Privacy Statemen=
+t here:
+<a href=3D"https://w3.ibm.com/w3publisher/w3-privacy-notice">https://w3.ibm=
+.com/w3publisher/w3-privacy-notice</a>.
+</p>
+</div>
+</div>
+</div>
+<table id=3D"footer" style=3D"width: 100%; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; border-collapse: collapse;">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica,Arial,sans-serif; border-collapse: coll=
+apse; padding: 24px;" class=3D"padded-section" align=3D"center">
+<p class=3D"spaced" style=3D"font-family: Helvetica,Arial,sans-serif; font-=
+size: 10px; line-height: 12px; margin: 0 0 5px;" align=3D"center">
+If you prefer not to receive emails like this from Credly, you may <a href=
+=3D"https://www.credly.com/email_preferences/v2:ZXZFS2htb2o4cFMxcUErTEFrOW8=
+3ZDN5Mk1JRDc3bEQ5MEpLczhZdno3Z3YrUXRSenQwPS0teExCcEhTUXQxamQrOVI5WC0tNzgzRH=
+FlSDVRN0hnTzZqTDdDMGthUT09/edit" style=3D"color: #005850; text-decoration: =
+none;">
+unsubscribe</a>. <br>
+<a href=3D"https://www.credly.com/earner/settings/account" style=3D"color: =
+#005850; text-decoration: none;">Manage</a> your email notification prefere=
+nces.
+<br>
+=C2=A9 Copyright 2025. All rights reserved. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso]>
+      </td></tr></table></center>
+    <![endif]--><img src=3D"https://u26682722.ct.sendgrid.net/wf/open?upn=
+=3Du001.hu0g8evq8Ju59D-2FVakl4jgG7DvgarIHLWywQ182SN9bgmYkDRQY76riCN7jfFUE7U=
+gSeenwY736rvvyUyre4KiB3rB2bAkwT41Zy-2BB0HmP85NT4cDdlZVqh-2BKxPHMy6flE71YAaS=
+xO7t38ZXK3UGJdUOaWPhi8gJRcbO3ygBq7wXPC-2FQAQ6pQ-2Fp2aO1d9V4HrJg9rKFM6Jveont=
+UnQRu70DyoIlGozJwHK6QV3qy6MbdkPurYF-2FBfA5gngXUp7lh2mB4VZ5QlEpUQyZ1TA2qZxFj=
+jvA-2FHxzpQGaSp9J0Sv54J9geT6j6HDbjiDaKYDuTLyxY8HEdKATc8LM46RXCrAjXCmppeTiVu=
+UgRJWpuMvuo5CHQuyxhm2o38Jy7hjuReJIfdmM-2BczXcMO8JojWS-2BYppx6TNWi9WSmpQ2wIK=
+wWMs2jl3Z-2FSCkN-2F-2BQ2XD6wKufkp23k4NhngSm2ONj5egNwBZSqS9NaJwpD2w-2BIs4bUL=
+SVj05rWfZujD9jVn-2FymWZpcQ8hI85aN95k-2Fewf8UpG0MDm9hGO42FOY3fHNMsKtYsLqFGNL=
+fnFYQ5Nx0i6QHlTSu2HUrjjciy6XcqHQEgpJmZpAC9y8IulLCNPopVznUzTuCdWLgsEfetJGFhA=
+XU9WYb4yYtg-2BlTa4tJ6mWEpig-3D-3D" alt=3D"" width=3D"1" height=3D"1" border=
+=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
+important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
+ !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
+m:0 !important;padding-right:0 !important;padding-left:0 !important;">
+</div>
+</body>
+</html>
+
+----==_mimepart_690a1867df79d_1d26ac109186--
